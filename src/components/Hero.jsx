@@ -35,8 +35,8 @@ export default function Hero() {
         <div className="relative">
           <div className="relative aspect-[4/5] md:aspect-[5/6] rounded-xl overflow-hidden shadow-elevated">
             <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80"
-              alt="Miko, real estate agent"
+              src={agent.photo}
+              alt={`${agent.name}, real estate agent`}
               className="w-full h-full object-cover"
               loading="eager"
             />

@@ -43,7 +43,7 @@ export default function AboutPage() {
             </div>
             <div className="relative aspect-[4/5] rounded-xl overflow-hidden shadow-elevated max-w-xs md:ml-auto w-full">
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+                src={agent.photo}
                 alt={agent.name}
                 className="w-full h-full object-cover"
               />

@@ -134,7 +134,7 @@ export const agent = {
   name: 'Miko Tan',
   role: 'Senior Real Estate Negotiator',
   blurb: 'Providing professional property solutions in Johor Bahru since 2019.',
-  photo: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80',
+  photo: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
   phone: '+60 12-345 6789',
   whatsapp: '+60123456789',
   email: 'miko-property@email.com',
