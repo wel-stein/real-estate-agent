@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-navy-950 font-sans antialiased;
+  }
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 bg-gold-500 hover:bg-gold-600 text-white font-medium px-5 py-3 rounded-md transition-colors shadow-sm;
+  }
+  .btn-outline-gold {
+    @apply inline-flex items-center justify-center gap-2 border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-white font-medium px-5 py-3 rounded-md transition-colors;
+  }
+  .btn-outline-light {
+    @apply inline-flex items-center justify-center gap-2 border border-white/40 text-white hover:bg-white/10 font-medium px-5 py-3 rounded-md transition-colors;
+  }
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1ebe57] text-white font-medium px-5 py-3 rounded-md transition-colors;
+  }
+  .section-title {
+    @apply font-serif text-3xl md:text-4xl text-navy-950 text-center;
+  }
+  .section-title-accent {
+    @apply mx-auto mt-3 h-0.5 w-12 bg-gold-500;
+  }
+  .container-px {
+    @apply px-5 md:px-10 lg:px-16;
+  }
+  .input-field {
+    @apply w-full bg-white/5 border border-white/15 text-white placeholder-white/50 rounded-md px-3 py-2.5 text-sm focus:outline-none focus:border-gold-400 focus:bg-white/10;
+  }
+  .input-light {
+    @apply w-full bg-cream-50 border border-cream-200 text-navy-950 placeholder-navy-950/40 rounded-md px-3 py-2.5 text-sm focus:outline-none focus:border-gold-500 focus:bg-white;
+  }
+}
