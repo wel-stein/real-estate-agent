@@ -8,6 +8,8 @@ import ListingsPage from './pages/ListingsPage'
 import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import ServicesPage from './pages/ServicesPage'
+import PrivacyPage from './pages/PrivacyPage'
+import TermsPage from './pages/TermsPage'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -29,6 +31,8 @@ export default function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/listings" element={<ListingsPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="/terms" element={<TermsPage />} />
           <Route path="/property/:id" element={<PropertyPage />} />
         </Routes>
       </main>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Icon from './Icon'
 
 export default function Footer() {
@@ -9,9 +10,9 @@ export default function Footer() {
           © {new Date().getFullYear()} Miko Real Estate. All rights reserved.
           <span className="hidden md:inline"> | </span>
           <br className="md:hidden" />
-          <a href="#" className="hover:text-white">Privacy Policy</a>
+          <Link to="/privacy" className="hover:text-white">Privacy Policy</Link>
           <span className="mx-2">·</span>
-          <a href="#" className="hover:text-white">Terms of Service</a>
+          <Link to="/terms" className="hover:text-white">Terms of Service</Link>
         </p>
         <div className="flex items-center gap-3">
           <a href="#" aria-label="Facebook" className="w-8 h-8 grid place-items-center rounded-full border border-white/15 hover:border-gold-400 hover:text-white">
