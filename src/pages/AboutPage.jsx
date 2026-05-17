@@ -150,7 +150,7 @@ export default function AboutPage() {
             <Link to="/listings" className="btn-gold">
               View Listings <Icon name="arrow" size={16} />
             </Link>
-            <Link to="/#contact" className="btn-outline-gold">
+            <Link to="/contact" className="btn-outline-gold">
               Contact Miko <span className="opacity-70">| 联系我</span>
             </Link>
           </div>

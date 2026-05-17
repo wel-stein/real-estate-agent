@@ -170,7 +170,7 @@ export default function ListingsPage() {
               ? 'No properties match your search'
               : `Showing ${filtered.length} of ${properties.length} ${properties.length === 1 ? 'property' : 'properties'}`}
           </p>
-          <Link to="/#contact" className="text-sm text-gold-600 hover:text-gold-700 inline-flex items-center gap-1.5">
+          <Link to="/contact" className="text-sm text-gold-600 hover:text-gold-700 inline-flex items-center gap-1.5">
             Can't find what you need? Ask Miko <Icon name="arrow" size={14} />
           </Link>
         </div>
@@ -192,7 +192,7 @@ export default function ListingsPage() {
             </p>
             <div className="mt-5 flex items-center justify-center gap-3">
               <button onClick={reset} className="btn-outline-gold text-sm py-2.5">Reset filters</button>
-              <Link to="/#contact" className="btn-gold text-sm py-2.5">Contact Miko</Link>
+              <Link to="/contact" className="btn-gold text-sm py-2.5">Contact Miko</Link>
             </div>
           </div>
         )}

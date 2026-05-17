@@ -34,9 +34,9 @@ export default function ListingsTeaser() {
                 <Link to="/listings" className="btn-gold">
                   View All Listings <Icon name="arrow" size={16} />
                 </Link>
-                <a href="#contact" className="btn-outline-gold">
+                <Link to="/contact" className="btn-outline-gold">
                   Talk to Miko <span className="opacity-70">| 联系我</span>
-                </a>
+                </Link>
               </div>
             </div>
 
