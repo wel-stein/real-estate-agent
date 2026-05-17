@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const links = [
   { to: '/#about', label: 'About' },
   { to: '/#services', label: 'Services' },
-  { to: '/#listings', label: 'Listings' },
+  { to: '/listings', label: 'Listings', route: true },
   { to: '/#contact', label: 'Contact' },
 ]
 
@@ -25,11 +25,17 @@ export default function Navbar({ variant = 'dark' }) {
           Miko
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm">
-          {links.map((l) => (
-            <a key={l.to} href={l.to} className={`${linkCls} transition-colors`}>
-              {l.label}
-            </a>
-          ))}
+          {links.map((l) =>
+            l.route ? (
+              <Link key={l.to} to={l.to} className={`${linkCls} transition-colors`}>
+                {l.label}
+              </Link>
+            ) : (
+              <a key={l.to} href={l.to} className={`${linkCls} transition-colors`}>
+                {l.label}
+              </a>
+            )
+          )}
         </nav>
         <div className="flex items-center gap-3">
           <div
@@ -73,16 +79,27 @@ export default function Navbar({ variant = 'dark' }) {
       {open && (
         <div className={`md:hidden border-t ${isDark ? 'border-white/10' : 'border-cream-200'}`}>
           <div className="container-px py-3 flex flex-col gap-1 text-sm">
-            {links.map((l) => (
-              <a
-                key={l.to}
-                href={l.to}
-                onClick={() => setOpen(false)}
-                className={`${linkCls} py-2`}
-              >
-                {l.label}
-              </a>
-            ))}
+            {links.map((l) =>
+              l.route ? (
+                <Link
+                  key={l.to}
+                  to={l.to}
+                  onClick={() => setOpen(false)}
+                  className={`${linkCls} py-2`}
+                >
+                  {l.label}
+                </Link>
+              ) : (
+                <a
+                  key={l.to}
+                  href={l.to}
+                  onClick={() => setOpen(false)}
+                  className={`${linkCls} py-2`}
+                >
+                  {l.label}
+                </a>
+              )
+            )}
             <div className={`mt-2 flex w-fit rounded-full overflow-hidden border ${
               isDark ? 'border-white/20' : 'border-cream-200'
             }`}>

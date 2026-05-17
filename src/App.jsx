@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
 import PropertyPage from './pages/PropertyPage'
+import ListingsPage from './pages/ListingsPage'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -21,6 +22,7 @@ export default function App() {
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/listings" element={<ListingsPage />} />
           <Route path="/property/:id" element={<PropertyPage />} />
         </Routes>
       </main>
