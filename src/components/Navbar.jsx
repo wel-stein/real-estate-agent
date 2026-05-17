@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const links = [
   { to: '/about', label: 'About', route: true },
-  { to: '/#services', label: 'Services' },
+  { to: '/services', label: 'Services', route: true },
   { to: '/listings', label: 'Listings', route: true },
   { to: '/contact', label: 'Contact', route: true },
 ]
