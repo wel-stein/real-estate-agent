@@ -27,7 +27,7 @@ export default function PropertyPage() {
   return (
     <div className="bg-white pb-24 md:pb-0">
       <div className="container-px mx-auto max-w-7xl py-6 md:py-10">
-        <Link to="/" className="hidden md:inline-flex items-center gap-1.5 text-sm text-navy-950/60 hover:text-navy-950 mb-5">
+        <Link to="/listings" className="hidden md:inline-flex items-center gap-1.5 text-sm text-navy-950/60 hover:text-navy-950 mb-5">
           <span className="rotate-180 inline-block"><Icon name="arrow" size={14} /></span> Back to listings
         </Link>
 
